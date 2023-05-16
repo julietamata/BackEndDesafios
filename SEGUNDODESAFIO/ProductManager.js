@@ -66,7 +66,7 @@ class ProductManager {
         }
     
 
-    // ACTUALIZAR PRODUCTOS 
+    // // // ACTUALIZAR PRODUCTOS 
        
     updateProduct = async({id, ...product}) => {
         await this.deleteProduct(id);
@@ -95,10 +95,10 @@ manager.getProducts()
 // console.log('El producto con el id seleccionado es', manager.getProductById(4))
 
 
-// Filtro para eliminar productos 
+// // Filtro para eliminar productos 
 // manager.deleteProduct(3)
 
-//Actualizando un producto 
+// // Actualizando un producto 
 manager.updateProduct({
         id: 5,
 		title: "Tacones love",
@@ -106,7 +106,7 @@ manager.updateProduct({
 		price: 950,
 		thumbnail: "https://firebasestorage.googleapis.com/v0/b/saramorchio-ecommerce.appspot.com/o/calz6.png?alt=media&token=f06585f5-cda1-4df5-82f6-89c29521fc37",
 		code: 122,
-		stock: 5
+		stock: 9
 })
 
 
